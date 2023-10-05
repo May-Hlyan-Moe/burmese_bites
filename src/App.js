@@ -1,5 +1,6 @@
 import './App.css';
 import Menu from './Menu';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -14,7 +15,16 @@ function App() {
           <i class="fa-sharp fa-solid fa-utensils"></i>
         </span>
       </div>
-      <Menu />
+      <div className='container'>
+        <div className='row'>
+          <div className='col-sm-8'>
+            <Menu />
+          </div>
+          <div className='col-sm-4'>
+            <Contact />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
